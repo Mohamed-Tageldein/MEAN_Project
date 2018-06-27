@@ -107,5 +107,6 @@ app.post('/newuser' , function (req , res) {
 
     });
 });
-app.listen(port);
-console.log("running  ... on  port  1994")
+http.listen(process.env.PORT || 3000, function(){
+  console.log('listening on', http.address().port);
+});
