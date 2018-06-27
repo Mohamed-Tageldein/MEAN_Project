@@ -6,7 +6,7 @@ var  mongojs=require('mongojs');
 var db=mongojs('sudanDB',['contact']);
 var dbs=mongojs('sudanDB',['user']);
 var  session=require('express-session')
-var  port= 1994;
+var  port=1994;
 
 
 app.use(express.static(__dirname + "/view"));
@@ -108,4 +108,4 @@ app.post('/newuser' , function (req , res) {
     });
 });
 app.listen(port);
-console.log("running  ... on  port 1994")
+console.log("running  ... on  port  1994")

@@ -18,7 +18,7 @@
 
 
 <div  class="container"  ng-controller="show"  >
-    <h1>Phone Book</h1>  <h1 style="color: red">hello  mohamed<p  ng-init="{{req.username}}"></p></h1>
+    <h1>Phone Book</h1>  <h1 style="color: red">hello<p  ng-init="{{req.username}}"></p></h1>
     <table  class="table">
         <thead>
         <tr>
@@ -30,14 +30,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td><input  class="form-control" ng-model="cont.name"  required> </td>
-            <td><input  type="number" class="form-control" ng-model="cont.phone"  required> </td>
-            <td><input  class="form-control" ng-model="cont.job"  required> </td>
-            <td><input  class="form-control" ng-model="cont.location"  required> </td>
-            <td><Button  class="btn btn-primary"  ng-click="addcontact()"> Add </Button>
-                <Button  class="btn btn-info"  ng-click="update()"> Update</Button></td>
-        </tr>
+
         <tr ng-repeat = "x in contact">
             <td>{{x.name}}</td>
             <td>{{x.phone}}</td>
@@ -55,6 +48,12 @@
 
 
 
+    <input  class="form-control" ng-model="cont.name"  required>
+    <input  type="number" class="form-control" ng-model="cont.phone"  required>
+    <input  class="form-control" ng-model="cont.job"  required>
+    <input  class="form-control" ng-model="cont.location"  required>
+    <Button  class="btn btn-primary"  ng-click="addcontact()"> Add </Button>
+    <Button  class="btn btn-info"  ng-click="update()"> Update</Button>
 
 </body>
 </html>
