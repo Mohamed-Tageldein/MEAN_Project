@@ -1,6 +1,6 @@
 
 {
-  "name": "sudan",
+  "name": "heroku-node-js-example",
   "version": "0.1.0",
   "description": "A Node.js app using the SparkPost Heroku add-on",
   "main": "server.js",
@@ -10,7 +10,7 @@
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "jquery": "^3.0.0",
-    "sparkpost": "^1.1.0"
+   
   },
   "devDependencies": {},
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mohamed-Tageldein/MEAN_Project.git"
+    "url": "https://github.com/Mohamed-Tageldein/MEAN_Project"
   },
   "keywords": [
     "node",
