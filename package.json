@@ -14,7 +14,7 @@
       }
     },
 	  "scripts": {
-      "start": "node server.js"
+      "start": "http-server -a localhost -p 8080 -c-1"
       
           },
 	
