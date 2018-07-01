@@ -15,7 +15,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "node server.js",
-    "postinstall": "script/copy-assets"
+   
   },
   "repository": {
     "type": "git",
