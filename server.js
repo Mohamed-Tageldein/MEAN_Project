@@ -6,7 +6,7 @@ var  mongojs=require('mongojs');
 var db=mongojs('sudanDB',['contact']);
 var dbs=mongojs('sudanDB',['user']);
 var  session=require('express-session')
-var  port=1994;
+
 
 
 app.use(express.static(__dirname + "/view"));
@@ -107,6 +107,6 @@ app.post('/newuser' , function (req , res) {
 
     });
 });
-http.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 3000, function(){
   console.log('listening on', http.address().port);
 });
